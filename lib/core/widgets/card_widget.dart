@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
-import '../color_manager.dart';
-import '../text_manager.dart';
-import '../text_style_manager.dart';
+import '../ReUseFiles/color_manager.dart';
+import '../ReUseFiles/text_manager.dart';
+import '../ReUseFiles/text_style_manager.dart';
 
 Card cardWidget(){
   return  Card(

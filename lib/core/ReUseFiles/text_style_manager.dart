@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mini_nft_marketplace/core/color_manager.dart';
-import 'package:mini_nft_marketplace/core/font_family_manager.dart';
+import 'package:mini_nft_marketplace/core/ReUseFiles/color_manager.dart';
+import 'package:mini_nft_marketplace/core/ReUseFiles/font_family_manager.dart';
 
 class TextStyleManager {
   static const TextStyle titleOnB = TextStyle(
@@ -14,6 +14,7 @@ class TextStyleManager {
     fontSize: 19.82,
     fontWeight: .w700,
     color: Colors.white,
+    fontFamily: FontFamilyManager.sfProDisplay
   );
 
   static const TextStyle subtitleCardOnB = TextStyle(

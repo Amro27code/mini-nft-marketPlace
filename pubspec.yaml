@@ -78,7 +78,7 @@ flutter:
       fonts:
         - asset: assets/fonts/SFPRODISPLAYREGULAR.OTF
           weight: 400
-        - asset: assets/fonts/SFPRODISPLAYREGULAR.OTF
+        - asset: assets/fonts/SFPRODISPLAYBOLD.OTF
           weight: 700
   #         style: italic
   #   - family: Trajan Pro

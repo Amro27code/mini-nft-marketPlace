@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ColorManager {
+  static const Color whiteColor=Colors.white;
   static const Color backgroundOnB1 = Color(0xff5C6098);
   static const Color backgroundOnB2 = Color(0xff767CB2);
   static const Color transparentColor = Colors.transparent;
