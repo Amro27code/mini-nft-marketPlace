@@ -18,7 +18,7 @@ class ComponentOnB extends StatelessWidget {
           children: [
             Text(TextManager.titleOnB, style: TextStyleManager.titleOnB),
             Spacer(),
-            boxUnderOnB(),
+            boxUnderOnB(context:context),
             // ( OR ) cardWidget()
           ],
         ),

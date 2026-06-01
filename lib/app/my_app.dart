@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       routes: RouteManager.routes,
       initialRoute: RouteName.initRouteOnB,
+      darkTheme: ThemeData.dark(),
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.teal)),
     );
   }

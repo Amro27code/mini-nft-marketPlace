@@ -7,4 +7,5 @@ class ColorManager {
   static const Color transparentColor = Colors.transparent;
   static const Color subtitleCardOnB = Color.fromRGBO(245, 245, 245, 0.7);
   static const Color buttonOnB = Color.fromRGBO(151, 169, 246, 0.5);
+  static const Color backgroundHomePage = Color(0xff211134);
 }

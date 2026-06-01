@@ -1,11 +1,12 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:mini_nft_marketplace/core/ReUseFiles/onpressed_fun.dart';
 import '../ReUseFiles/color_manager.dart';
 import '../ReUseFiles/numbers_manager.dart';
 import '../ReUseFiles/text_manager.dart';
 import '../ReUseFiles/text_style_manager.dart';
 
-SizedBox boxUnderOnB() {
+SizedBox boxUnderOnB({required BuildContext context}) {
   return SizedBox(
     height: HeightManager.sizedBoxOnB,
     width: WidthManager.sizedBoxOnB,
@@ -53,7 +54,11 @@ SizedBox boxUnderOnB() {
                       sigmaX: SigmaImageFilter.sigmaXButtonOnB,
                     ),
                     child: MaterialButton(
-                      onPressed: () {},
+                      onPressed: onPressedFunction(
+                        context: context,
+                        nextPage: "HomePage",
+                        pushReplacement: true
+                      ),
                       child: Text(
                         TextManager.buttonOnB,
                         style: TextStyleManager.buttonOnB,
