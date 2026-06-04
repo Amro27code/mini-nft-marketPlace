@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mini_nft_marketplace/core/ReUseFiles/color_manager.dart';
+import 'package:mini_nft_marketplace/core/ReUseFiles/font_family_manager.dart';
+import 'package:mini_nft_marketplace/core/ReUseFiles/image_path_manager.dart';
+import 'package:mini_nft_marketplace/core/ReUseFiles/text_manager.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,8 +10,23 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: ColorManager.backgroundHomePage,
+        title: Text(
+          TextManager.titleHomePage,
+          style: TextStyle(
+            fontSize: 25.23,
+            fontFamily: FontFamilyManager.sfProDisplay,
+          ),
+        ),
+      ),
       backgroundColor: ColorManager.backgroundHomePage,
-      body: Center(child: Text("data")),
+      body: Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
