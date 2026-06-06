@@ -11,7 +11,7 @@ SizedBox boxUnderOnB({required BuildContext context}) {
     height: HeightManager.sizedBoxOnB,
     width: WidthManager.sizedBoxOnB,
     child: ClipRRect(
-      borderRadius: BorderRadiusGeometry.circular(Radius.clipRRectOnB),
+      borderRadius: BorderRadiusGeometry.circular(CirRadius.clipRRectOnB),
       child: BackdropFilter(
         // filterConfig: ImageFilterConfig.blur(sigmaY: 8,sigmaX: 8,),
         // OR
@@ -40,7 +40,7 @@ SizedBox boxUnderOnB({required BuildContext context}) {
                 decoration: BoxDecoration(
                   color: ColorManager.buttonOnB,
                   borderRadius: BorderRadiusGeometry.circular(
-                    Radius.containerOnB,
+                    CirRadius.containerOnB,
                   ),
                   border: Border.all(
                     color: ColorManager.whiteColor.withAlpha(0),

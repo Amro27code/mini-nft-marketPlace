@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mini_nft_marketplace/core/ReUseFiles/color_manager.dart';
 import 'package:mini_nft_marketplace/core/ReUseFiles/font_family_manager.dart';
+import 'package:mini_nft_marketplace/core/ReUseFiles/numbers_manager.dart';
 
 class TextStyleManager {
   static const TextStyle titleOnB = TextStyle(
@@ -27,4 +28,10 @@ class TextStyleManager {
     fontWeight: .w600,
     color: Colors.white,
   );
+  static const TextStyle textImagesHome = TextStyle(
+    fontSize: FontSizeManager.textImagesHome,
+    fontWeight: .bold,
+    fontFamily: FontFamilyManager.sfProDisplay,
+  );
+
 }
