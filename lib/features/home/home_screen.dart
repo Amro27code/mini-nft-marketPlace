@@ -6,6 +6,9 @@ import 'package:mini_nft_marketplace/core/ReUseFiles/numbers_manager.dart';
 import 'package:mini_nft_marketplace/core/ReUseFiles/text_manager.dart';
 import 'package:mini_nft_marketplace/core/widgets/image_home.dart';
 
+import '../../core/ReUseFiles/constants.dart';
+import '../../models/images_home.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -28,22 +31,14 @@ class HomeScreen extends StatelessWidget {
         children: [
           SizedBox(
             height: HeightManager.imagesHome,
-            child: ListView(
+            child: ListView.separated(
               scrollDirection: .horizontal,
-              children: [
-                imageHome(
-                  textAbove: TextManager.art,
-                  imagePath: ImagePathManager.musicHome,
-                ),
-                imageHome(
-                  textAbove: TextManager.art,
-                  imagePath: ImagePathManager.artHome,
-                ),
-                imageHome(
-                  textAbove: TextManager.art,
-                  imagePath: ImagePathManager.pHome,
-                ),
-              ],
+              itemCount: Constants.www.length,
+              separatorBuilder: (context, index) => const SizedBox(width: 9.01),
+              itemBuilder: (context, index) => imageHome(
+                textAbove: Constants.www[index].textAboveImage,
+                imagePath: Constants.www[index].imagePath,
+              ),
             ),
           ),
         ],
