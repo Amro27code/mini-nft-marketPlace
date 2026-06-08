@@ -5,5 +5,8 @@ class TextManager {
   static const String buttonOnB="Get started now";
   static const String titleHomePage="NFT Marketplace";
   static const String art="Art";
+  static const String  virtualWorlds= "Virtual Worlds";
+  static const String music="Music";
+  static const String trendingCollections="Trending collections";
 
 }

@@ -15,7 +15,7 @@ class TextStyleManager {
     fontSize: 19.82,
     fontWeight: .w700,
     color: Colors.white,
-    fontFamily: FontFamilyManager.sfProDisplay
+    fontFamily: FontFamilyManager.sfProDisplay,
   );
 
   static const TextStyle subtitleCardOnB = TextStyle(
@@ -33,5 +33,9 @@ class TextStyleManager {
     fontWeight: .bold,
     fontFamily: FontFamilyManager.sfProDisplay,
   );
-
+  static const TextStyle titleListSeparatedHome = TextStyle(
+    fontFamily: FontFamilyManager.sfProDisplay,
+    fontWeight: .bold,
+    fontSize: 18,
+  );
 }

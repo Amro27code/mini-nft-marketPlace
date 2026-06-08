@@ -6,40 +6,43 @@ import '../widgets/image_home.dart';
 import 'image_path_manager.dart';
 
 class Constants {
-  static   List<Widget> w = [
-    imageHome(textAbove: "Music", imagePath: ImagePathManager.musicHome),
+  static List<Widget> w = [
     imageHome(
-      textAbove: TextManager.art,
-      imagePath: ImagePathManager.artHome,
+      textAbove: TextManager.music,
+      imagePath: ImagePathManager.musicHome,
     ),
-    imageHome(textAbove: "Virtual Worlds", imagePath: ImagePathManager.pHome),
+    imageHome(textAbove: TextManager.art, imagePath: ImagePathManager.artHome),
+    imageHome(
+      textAbove: TextManager.virtualWorlds,
+      imagePath: ImagePathManager.pHome,
+    ),
   ];
   static final List<ImageHomeModel> ww = [
     ImageHomeModel(
       imagePath: ImagePathManager.musicHome,
-      textAboveImage: "Music",
+      textAboveImage: TextManager.music,
     ),
-     ImageHomeModel(
+    ImageHomeModel(
       imagePath: ImagePathManager.artHome,
       textAboveImage: TextManager.art,
     ),
-     ImageHomeModel(
+    ImageHomeModel(
       imagePath: ImagePathManager.pHome,
-      textAboveImage: "Virtual Worlds",
+      textAboveImage: TextManager.virtualWorlds,
     ),
   ];
   static final List<ImageHomeModel2> www = [
     ImageHomeModel2(
       imagePath: ImagePathManager.musicHome,
-      textAboveImage: "Music",
+      textAboveImage: ImagePathManager.musicHome,
     ),
-     ImageHomeModel2(
+    ImageHomeModel2(
       imagePath: ImagePathManager.artHome,
       textAboveImage: TextManager.art,
     ),
-     ImageHomeModel2(
+    ImageHomeModel2(
       imagePath: ImagePathManager.pHome,
-      textAboveImage: "Virtual Worlds",
+      textAboveImage: TextManager.virtualWorlds,
     ),
   ];
 }
