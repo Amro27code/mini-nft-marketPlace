@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: ColorManager.backgroundHomePage,
       body: Padding(
         padding: const EdgeInsets.all(PaddingManager.allHomescreen),
-        child: Column(
+        child: ListView(
           children: [
             SizedBox(
               height: HeightManager.imagesHome,
