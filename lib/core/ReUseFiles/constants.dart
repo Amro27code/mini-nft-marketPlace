@@ -34,7 +34,7 @@ class Constants {
   static final List<ImageHomeModel2> www = [
     ImageHomeModel2(
       imagePath: ImagePathManager.musicHome,
-      textAboveImage: ImagePathManager.musicHome,
+      textAboveImage: TextManager.music,
     ),
     ImageHomeModel2(
       imagePath: ImagePathManager.artHome,
