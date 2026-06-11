@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class ColorManager {
   static const Color whiteColor = Colors.white;
+  static  Color whiteColor30Alpha = ColorManager.whiteColor.withAlpha(30);
   static const Color backgroundOnB1 = Color(0xff5C6098);
   static const Color backgroundOnB2 = Color(0xff767CB2);
   static const Color transparentColor = Colors.transparent;
@@ -12,4 +13,5 @@ class ColorManager {
     0x00000000,
   ); //OR Color(0xff000000).withValues(alpha: 0) ==> 0x(Hex Opacity value).....
   static Color blurImagesHome2 = Color(0x73000000);
+  static Color red = Colors.red;
 }

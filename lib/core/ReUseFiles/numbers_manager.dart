@@ -4,6 +4,11 @@ class WidthManager {
   static const double imagesHome=252.26;
   static const double imagesHomeBlur=252.26;
   static const double separatedListViewHome=9.01;
+  static const double w_139=139.64;
+  static const double w9=9;
+  static const double w3=3;
+  static const double w167=167.66;
+
 }
 
 class HeightManager {
@@ -11,17 +16,24 @@ class HeightManager {
   static const double sizedBoxOnB = 191;
   static const double space5 = 5.41;
   static const double space27 = 27;
+  static const double h_210 = 210;
   static const double homeBetweenBlock =  27.03;
   static const double imagesHome = 167.57;
   static const double imagesHomeBlur=54.06;
   static const double h7=7;
+  static const double h9=9;
+  static const double h_139=139.64;
+
 
 }
 
 class PaddingManager {
   static const double verticalPaddingColumnOnB = 90;
   static const double inSizedBoxOnB = 23;
-  static const double allHomescreen=10;
+  static const double allHomescreenHor=16;
+  static const double allHomescreenVer=8;
+  static const double p_9=9;
+  static const double p_18=18;
 }
 
 class MarginManager {}
@@ -46,4 +58,10 @@ static const double sigmaYImagesHome=3;
 }
 class PositionManager{
   static const double textAboveImageAtHome=0;
+}
+class NumberOfLike{
+
+  static const int n194=194;
+  static const int n200=200;
+  static const int n978=978;
 }

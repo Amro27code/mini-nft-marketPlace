@@ -8,5 +8,8 @@ class TextManager {
   static const String  virtualWorlds= "Virtual Worlds";
   static const String music="Music";
   static const String trendingCollections="Trending collections";
+  static const String trend1="3D Art";
+  static const String trend2="Abstract Art";
+  static const String trend3="Portrait Art";
 
 }
