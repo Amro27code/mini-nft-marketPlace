@@ -6,6 +6,7 @@ import 'package:mini_nft_marketplace/core/ReUseFiles/text_manager.dart';
 import 'package:mini_nft_marketplace/core/ReUseFiles/text_style_manager.dart';
 import 'package:mini_nft_marketplace/core/widgets/image_home.dart';
 import 'package:mini_nft_marketplace/core/widgets/card_collection.dart';
+import 'package:mini_nft_marketplace/core/widgets/top_seller_collection.dart';
 import '../../core/ReUseFiles/constants.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -63,6 +64,27 @@ class HomeScreen extends StatelessWidget {
               itemBuilder: (context, index) =>
                   CardCollection(trendModel: Constants.trendList[index]),
               scrollDirection: .horizontal,
+            ),
+          ),
+          const SizedBox(height: HeightManager.homeBetweenBlock),
+          const Align(
+            alignment: .topLeft,
+            child: Text(
+              TextManager.topSeller,
+              style: TextStyleManager.titleListSeparatedHome,
+            ),
+          ),
+          const SizedBox(height: HeightManager.h7),
+          SizedBox(
+            height: HeightManager.h_256,
+            child: ListView.separated(
+              scrollDirection: .horizontal,
+              itemCount: Constants.topSellerList.length,
+              separatorBuilder: (context, index) =>
+                  const SizedBox(width: WidthManager.w9),
+              itemBuilder: (context, index) => TopSellerCollection(
+                topSellerModel: Constants.topSellerList[index],
+              ),
             ),
           ),
         ],

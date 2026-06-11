@@ -1,16 +1,17 @@
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'package:mini_nft_marketplace/core/ReUseFiles/color_manager.dart';
-import 'package:mini_nft_marketplace/core/ReUseFiles/icons.dart';
-import 'package:mini_nft_marketplace/core/ReUseFiles/numbers_manager.dart';
 import 'package:mini_nft_marketplace/core/ReUseFiles/text_style_manager.dart';
+import 'package:mini_nft_marketplace/models/topseller.dart';
 
-import '../../models/trending.dart';
+import '../ReUseFiles/color_manager.dart';
+import '../ReUseFiles/icons.dart';
+import '../ReUseFiles/numbers_manager.dart';
 
-class CardCollection extends StatelessWidget {
-  const CardCollection({super.key, required this.trendModel});
+class TopSellerCollection extends StatelessWidget {
+  const TopSellerCollection({super.key, required this.topSellerModel});
 
-  final Trending trendModel;
+  final TopSellerModel topSellerModel;
 
   @override
   Widget build(BuildContext context) {
@@ -24,42 +25,53 @@ class CardCollection extends StatelessWidget {
             sigmaY: SigmaImageFilter.sigmaYSizedBoxOnB,
           ),
           child: Container(
-            height: HeightManager.h_210,
+            height: HeightManager.h_256,
             width: WidthManager.w167,
             color: ColorManager.whiteColor30Alpha,
             padding: const EdgeInsets.only(
               top: PaddingManager.p_9,
               right: PaddingManager.p_9,
               left: PaddingManager.p_9,
-              bottom: PaddingManager.p_18,
+              bottom: PaddingManager.p_16,
             ),
             child: Column(
+              spacing: WidthManager.w3,
+              crossAxisAlignment: .start,
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadiusGeometry.circular(CirRadius.imagesCollectionHome),
+                Center(
                   child: Image(
-                    image: AssetImage(trendModel.image),
+                    image: AssetImage(topSellerModel.imagePath),
                     height: HeightManager.h_139,
                     fit: BoxFit.cover,
                     width: WidthManager.w_139,
                   ),
                 ),
                 const SizedBox(height: HeightManager.h9),
+                Text(
+                  topSellerModel.title,
+                  style: TextStyleManager.titleHomeCollection,
+                ),
+                Text(
+                  topSellerModel.subtitle,
+                  style: TextStyleManager.subtitleHomeCollection,
+                ),
+                Spacer(),
                 Row(
-                  spacing: WidthManager.w3,
+                  spacing: WidthManager.w2,
                   children: [
+                    Icon(Icons.attach_money),
                     Text(
-                      trendModel.trendName,
-                      style:TextStyleManager.titleHomeCollection,
+                      "${topSellerModel.seller}",
+                      style: TextStyleManager.titleHomeCollection,
                     ),
                     const Spacer(),
                     Icon(
-                      trendModel.isActive
+                      topSellerModel.isActive
                           ? IconsManager.fullFavorite
                           : IconsManager.emptyFavorite,
                       color: ColorManager.red,
                     ),
-                    Text("${trendModel.countLike}"),
+                    Text("${topSellerModel.countLike}"),
                   ],
                 ),
               ],

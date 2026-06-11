@@ -12,4 +12,12 @@ class TextManager {
   static const String trend2="Abstract Art";
   static const String trend3="Portrait Art";
 
+  static const String topSeller="Top seller";
+  static const String titleSeller1="Wave";
+  static const String titleSeller2="Abstract Pink";
+  static const String titleSeller3="Wave";
+  static const String subtitleSeller1="wav2 #5672";
+  static const String subtitleSeller2="abstract #2538";
+  static const String subtitleSeller3="wavepi #5267";
+
 }

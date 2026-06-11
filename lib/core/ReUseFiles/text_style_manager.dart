@@ -38,4 +38,10 @@ class TextStyleManager {
     fontWeight: .bold,
     fontSize: 18,
   );
+  static const TextStyle titleHomeCollection =  TextStyle(
+    fontSize: 13,
+    fontWeight: .w600,
+    fontFamily: FontFamilyManager.sfProDisplay,
+  );
+  static const TextStyle subtitleHomeCollection =   TextStyle(fontSize: 12);
 }
