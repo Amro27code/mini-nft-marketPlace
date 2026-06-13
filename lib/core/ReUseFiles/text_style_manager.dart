@@ -44,4 +44,8 @@ class TextStyleManager {
     fontFamily: FontFamilyManager.sfProDisplay,
   );
   static const TextStyle subtitleHomeCollection =   TextStyle(fontSize: 12);
+  static const TextStyle titleHomePage =   TextStyle(
+    fontSize: 25.23,
+    fontFamily: FontFamilyManager.sfProDisplay,
+  );
 }

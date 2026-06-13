@@ -13,8 +13,6 @@ SizedBox boxUnderOnB({required BuildContext context}) {
     child: ClipRRect(
       borderRadius: BorderRadiusGeometry.circular(CirRadius.clipRRectOnB),
       child: BackdropFilter(
-        // filterConfig: ImageFilterConfig.blur(sigmaY: 8,sigmaX: 8,),
-        // OR
         filter: ImageFilter.blur(
           sigmaX: SigmaImageFilter.sigmaXSizedBoxOnB,
           sigmaY: SigmaImageFilter.sigmaYSizedBoxOnB,

@@ -9,6 +9,8 @@ class WidthManager {
   static const double w3 = 3;
   static const double w2 = 2;
   static const double w167 = 167.66;
+  static const double wBetweenTwoBBnb = 39;
+  static const double wPolygon = 70;
 }
 
 class HeightManager {
@@ -24,6 +26,10 @@ class HeightManager {
   static const double h9 = 9;
   static const double h_139 = 139.64;
   static const double h_256 = 256;
+  static const double hPolygon = 70;
+  static const double bnbWithoutPolygon = 90;
+  static const double bnbWithPolygon = 122;
+
 }
 
 class PaddingManager {
@@ -47,6 +53,7 @@ class CirRadius {
   static const double containerOnB = 20;
   static double imagesHome = 27.3;
   static double imagesCollectionHome = 19.82;
+  static double bnbRadius = 60;
 }
 
 class SigmaImageFilter {
@@ -60,6 +67,9 @@ class SigmaImageFilter {
 
 class PositionManager {
   static const double textAboveImageAtHome = 0;
+  static const double topInPolygon = 0;
+
+
 }
 
 class Numbers {
@@ -68,8 +78,12 @@ class Numbers {
   static const int n978 = 978;
   static const int n5160 =  5160;
   static const int n20 = 20;
+  static const double sidesPolygon = 6;
+  static const double roundPointsPolygon = 0.5;
+  static const double sizeIconsBnb = 39;
   static const double seller1Collection = 0.018;
   static const double seller2Collection = 0.906;
   static const double seller3Collection = 0.26;
+
 
 }

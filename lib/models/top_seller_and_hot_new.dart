@@ -1,10 +1,10 @@
-class TopSellerModel {
+class TopSellerAndHotNewModel {
   String imagePath, title, subtitle;
   bool isActive;
   int countLike;
   double seller;
 
-  TopSellerModel({
+  TopSellerAndHotNewModel({
     required this.imagePath,
     required this.title,
     required this.subtitle,

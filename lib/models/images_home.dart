@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../core/widgets/image_home.dart';
+import '../features/home/widgets/image_home.dart';
 
 class ImageHomeModel {
   String imagePath, textAboveImage;

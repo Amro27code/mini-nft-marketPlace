@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mini_nft_marketplace/core/ReUseFiles/text_manager.dart';
-import 'package:mini_nft_marketplace/models/topseller.dart';
+import 'package:mini_nft_marketplace/models/top_seller_and_hot_new.dart';
+import '../../features/home/widgets/image_home.dart';
 import '../../models/images_home.dart';
 import '../../models/trending.dart';
-import '../widgets/image_home.dart';
 import 'image_path_manager.dart';
 import 'numbers_manager.dart';
 
@@ -67,8 +67,8 @@ class Constants {
       isActive: true,
     ),
   ];
-  static final List<TopSellerModel> topSellerList = [
-    TopSellerModel(
+  static final List<TopSellerAndHotNewModel> topSellerList = [
+    TopSellerAndHotNewModel(
       imagePath: ImagePathManager.topSeller1,
       title: TextManager.titleSeller1,
       subtitle: TextManager.subtitleSeller1,
@@ -76,7 +76,7 @@ class Constants {
       countLike: Numbers.n5160,
       seller: Numbers.seller1Collection,
     ),
-    TopSellerModel(
+    TopSellerAndHotNewModel(
       imagePath: ImagePathManager.topSeller2,
       title: TextManager.titleSeller2,
       subtitle: TextManager.subtitleSeller2,
@@ -84,13 +84,40 @@ class Constants {
       countLike: Numbers.n20,
       seller: Numbers.seller2Collection,
     ),
-    TopSellerModel(
+    TopSellerAndHotNewModel(
       imagePath: ImagePathManager.topSeller3,
       title: TextManager.titleSeller3,
       subtitle: TextManager.subtitleSeller3,
       isActive: true,
       countLike: Numbers.n200,
       seller: Numbers.seller3Collection,
+    ),
+  ];
+  static final List<TopSellerAndHotNewModel> hotNewList = [
+    TopSellerAndHotNewModel(
+      imagePath: ImagePathManager.hotNew1,
+      title: "Music",
+      subtitle: "mali #7890",
+      isActive: false,
+      countLike: 123,
+      seller: 0.46,
+    ),
+    TopSellerAndHotNewModel(
+      imagePath: ImagePathManager.hotNew2,
+      title: "Ball",
+      subtitle: "baalli #4890",
+      isActive: false,
+      countLike: 3222,
+      seller: 0.03,
+    ),
+    TopSellerAndHotNewModel(
+      imagePath: ImagePathManager.hotNew3,
+      title: "Ring",
+      
+      subtitle: "Ring #7288",
+      isActive: false,
+      countLike: 27,
+      seller: 0.106,
     ),
   ];
 }

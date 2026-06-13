@@ -13,6 +13,7 @@ class TextManager {
   static const String trend3="Portrait Art";
 
   static const String topSeller="Top seller";
+  static const String hotNewItems="Hot new items";
   static const String titleSeller1="Wave";
   static const String titleSeller2="Abstract Pink";
   static const String titleSeller3="Wave";
