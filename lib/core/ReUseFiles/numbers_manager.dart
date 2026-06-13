@@ -77,6 +77,9 @@ class Numbers {
   static const int n200 = 200;
   static const int n978 = 978;
   static const int n5160 =  5160;
+  static const int n132 =  132;
+  static const int n3222 =  3222;
+  static const int n27 =  27;
   static const int n20 = 20;
   static const double sidesPolygon = 6;
   static const double roundPointsPolygon = 0.5;
@@ -84,6 +87,9 @@ class Numbers {
   static const double seller1Collection = 0.018;
   static const double seller2Collection = 0.906;
   static const double seller3Collection = 0.26;
+  static const double hotNew1seller = 0.46;
+  static const double hotNew2seller = 0.03;
+  static const double hotNew3seller = 0.106;
 
 
 }

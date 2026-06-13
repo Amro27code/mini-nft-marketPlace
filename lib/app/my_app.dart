@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../core/ReUseFiles/route_manager.dart';
 
 class MyApp extends StatelessWidget {
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      routes: RouteManager.routes,
+      routes:RouteManager.routes,
       initialRoute: RouteName.initRouteOnB,
       darkTheme: ThemeData.dark(),
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.teal)),

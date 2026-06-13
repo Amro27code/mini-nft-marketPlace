@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:mini_nft_marketplace/core/ReUseFiles/onpressed_fun.dart';
+import 'package:mini_nft_marketplace/core/ReUseFiles/route_manager.dart';
 import '../ReUseFiles/color_manager.dart';
 import '../ReUseFiles/numbers_manager.dart';
 import '../ReUseFiles/text_manager.dart';
@@ -54,7 +55,7 @@ SizedBox boxUnderOnB({required BuildContext context}) {
                     child: MaterialButton(
                       onPressed: onPressedFunction(
                         context: context,
-                        nextPage: "HomePage",
+                        nextPage:RouteName.homePage,
                         pushReplacement: true
                       ),
                       child: Text(

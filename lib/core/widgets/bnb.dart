@@ -1,21 +1,23 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
-
 import '../ReUseFiles/color_manager.dart';
 import '../ReUseFiles/icons.dart';
 import '../ReUseFiles/numbers_manager.dart';
 
-class Bnb extends StatefulWidget {
-  const Bnb({super.key});
+class Bnb extends StatelessWidget {
+  const Bnb({
+    super.key,
+    required this.onPressedH,
+    required this.onPressedS,
+    required this.onPressedSearch,
+    required this.onPressedP,
+  });
 
-  @override
-  State<Bnb> createState() => _BnbState();
-}
+  final VoidCallback onPressedH;
+  final VoidCallback onPressedS;
+  final VoidCallback onPressedSearch;
+  final VoidCallback onPressedP;
 
-int index = 0;
-
-class _BnbState extends State<Bnb> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -25,7 +27,7 @@ class _BnbState extends State<Bnb> {
         children: [
           ClipRRect(
             borderRadius: BorderRadiusGeometry.vertical(
-              top: Radius.circular(PositionManager.topInPolygon),
+              top: Radius.circular(CirRadius.bnbRadius),
             ),
             child: BackdropFilter(
               filter: ImageFilter.blur(
@@ -47,14 +49,35 @@ class _BnbState extends State<Bnb> {
                 child: Row(
                   mainAxisAlignment: .spaceAround,
                   children: [
-                    Icon(IconsManager.homeBnb, size: Numbers.sizeIconsBnb),
-                    Icon(
-                      IconsManager.probabilityBnb,
-                      size: Numbers.sizeIconsBnb,
+                    IconButton(
+                      onPressed: onPressedH,
+                      icon: Icon(
+                        IconsManager.homeBnb,
+                        size: Numbers.sizeIconsBnb,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: onPressedS,
+                      icon: Icon(
+                        IconsManager.probabilityBnb,
+                        size: Numbers.sizeIconsBnb,
+                      ),
                     ),
                     const SizedBox(width: WidthManager.wBetweenTwoBBnb),
-                    Icon(IconsManager.searchBnb, size: Numbers.sizeIconsBnb),
-                    Icon(IconsManager.personBnb, size: Numbers.sizeIconsBnb),
+                    IconButton(
+                      onPressed: onPressedSearch,
+                      icon: Icon(
+                        IconsManager.searchBnb,
+                        size: Numbers.sizeIconsBnb,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: onPressedP,
+                      icon: Icon(
+                        IconsManager.personBnb,
+                        size: Numbers.sizeIconsBnb,
+                      ),
+                    ),
                   ],
                 ),
               ),

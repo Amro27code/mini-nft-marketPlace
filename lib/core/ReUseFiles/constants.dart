@@ -96,28 +96,27 @@ class Constants {
   static final List<TopSellerAndHotNewModel> hotNewList = [
     TopSellerAndHotNewModel(
       imagePath: ImagePathManager.hotNew1,
-      title: "Music",
-      subtitle: "mali #7890",
+      title: TextManager.titleHotSeller1,
+      subtitle: TextManager.subtitleHotSeller1,
       isActive: false,
-      countLike: 123,
-      seller: 0.46,
+      countLike: Numbers.n132,
+      seller: Numbers.hotNew1seller,
     ),
     TopSellerAndHotNewModel(
       imagePath: ImagePathManager.hotNew2,
-      title: "Ball",
-      subtitle: "baalli #4890",
+      title: TextManager.titleHotSeller2,
+      subtitle: TextManager.subtitleHotSeller2,
       isActive: false,
-      countLike: 3222,
-      seller: 0.03,
+      countLike: Numbers.n3222,
+      seller: Numbers.hotNew2seller,
     ),
     TopSellerAndHotNewModel(
       imagePath: ImagePathManager.hotNew3,
-      title: "Ring",
-      
-      subtitle: "Ring #7288",
+      title: TextManager.titleHotSeller3,
+      subtitle: TextManager.subtitleHotSeller3,
       isActive: false,
-      countLike: 27,
-      seller: 0.106,
+      countLike: Numbers.n27,
+      seller: Numbers.hotNew3seller,
     ),
   ];
 }

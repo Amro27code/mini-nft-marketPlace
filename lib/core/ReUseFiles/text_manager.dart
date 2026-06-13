@@ -20,5 +20,11 @@ class TextManager {
   static const String subtitleSeller1="wav2 #5672";
   static const String subtitleSeller2="abstract #2538";
   static const String subtitleSeller3="wavepi #5267";
+  static const String titleHotSeller1="Music";
+  static const String titleHotSeller2="Ball";
+  static const String titleHotSeller3="Ring";
+  static const String subtitleHotSeller1="mali #7890";
+  static const String subtitleHotSeller2="baalli #4890";
+  static const String subtitleHotSeller3="Ring #7288";
 
 }

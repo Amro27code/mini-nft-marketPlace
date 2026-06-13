@@ -45,10 +45,13 @@ Column trendingField() {
   );
 }
 
-Column topSellerAndHotNewField({required List<TopSellerAndHotNewModel> listModels}) {
+Column topSellerAndHotNewField({
+  required List<TopSellerAndHotNewModel> listModels,
+  required String header,
+}) {
   return Column(
     children: [
-      alignWidget(text: TextManager.topSeller),
+      alignWidget(text: header),
       const SizedBox(height: HeightManager.h7),
       SizedBox(
         height: HeightManager.h_256,
@@ -57,9 +60,8 @@ Column topSellerAndHotNewField({required List<TopSellerAndHotNewModel> listModel
           itemCount: Constants.topSellerList.length,
           separatorBuilder: (context, index) =>
               const SizedBox(width: WidthManager.w9),
-          itemBuilder: (context, index) => TopSellerCollection(
-            topSellerModel: listModels[index],
-          ),
+          itemBuilder: (context, index) =>
+              TopSellerCollection(topSellerModel: listModels[index]),
         ),
       ),
     ],
