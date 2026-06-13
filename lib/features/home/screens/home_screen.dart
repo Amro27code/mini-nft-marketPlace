@@ -7,17 +7,21 @@ import '../../../core/widgets/bnb.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
+
 class _HomeScreenState extends State<HomeScreen> {
   List<Widget> lWdg = [HomePage(), StatesPage(), SearchScreen(), PersonPage()];
   int index = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
       body: lWdg[index],
+      //ونعمل ال appBar زي ال list في ال body او حطها على scaffold واحدة
       bottomNavigationBar: Bnb(
         onPressedH: () => setState(() => index = 0),
         onPressedS: () => setState(() => index = 1),
