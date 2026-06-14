@@ -38,28 +38,33 @@ class StatesPage extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 10.0),
-                      child: Row(
-                        mainAxisSize: .min,
-                        spacing: 5,
-                        children: [
-                          Icon(
-                            IconsManager.probabilityBnb,
-                            color: ColorManager.greyColor,
-                          ),
-                          Text(
-                            "Ranking",
-                            style: TextStyleManager.appTitleStatsActive,
-                          ),
-                        ],
-                      ),
+                    Row(
+                      mainAxisSize: .min,
+                      spacing: 5,
+                      children: [
+                        Icon(
+                          IconsManager.probabilityBnb,
+                          color: ColorManager.greyColor,
+                        ),
+                        Text(
+                          "Ranking",
+                          style: TextStyleManager.appTitleStatsActive,
+                        ),
+                      ],
                     ),
                     Container(
                       width: 106,
                       height: 3.6,
+                      margin: const EdgeInsets.only(top: 10.0),
                       decoration: BoxDecoration(
-                        // boxShadow: [],
+                        boxShadow: [
+                          BoxShadow(
+                            blurRadius: 20,
+                            offset: Offset(0, -12),
+                            spreadRadius: 0.5,
+                            color: ColorManager.lightBlueStats,
+                          ),
+                        ],
                         color: ColorManager.lightBlueStats,
                         borderRadius: BorderRadius.circular(27),
                       ),
