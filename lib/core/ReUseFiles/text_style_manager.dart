@@ -38,14 +38,23 @@ class TextStyleManager {
     fontWeight: .bold,
     fontSize: 18,
   );
-  static const TextStyle titleHomeCollection =  TextStyle(
+  static const TextStyle titleHomeCollection = TextStyle(
     fontSize: 13,
     fontWeight: .w600,
     fontFamily: FontFamilyManager.sfProDisplay,
   );
-  static const TextStyle subtitleHomeCollection =   TextStyle(fontSize: 12);
-  static const TextStyle titleHomePage =   TextStyle(
+  static const TextStyle subtitleHomeCollection = TextStyle(fontSize: 12);
+  static const TextStyle titleHomePage = TextStyle(
     fontSize: 25.23,
+    fontFamily: FontFamilyManager.sfProDisplay,
+  );
+  static const TextStyle appTitleStatsActive = TextStyle(
+    fontWeight: FontWeight.bold,
+    fontFamily: FontFamilyManager.sfProDisplay,
+  );
+  static const TextStyle appTitleStatsNonActive = TextStyle(
+    fontWeight: FontWeight.bold,
+    color: Colors.grey,
     fontFamily: FontFamilyManager.sfProDisplay,
   );
 }

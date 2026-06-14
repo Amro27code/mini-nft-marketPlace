@@ -8,12 +8,14 @@ AppBar appBar({
   TextStyle? textStyle,
   List<Widget>? actions,
   Widget? leading,
+  double? toolBarHeight
 }) {
   return AppBar(
     centerTitle: centerTitle,
     actions: actions,
+    toolbarHeight: toolBarHeight,
     leading: leading,
     backgroundColor: backgroundColor,
-    title: Text(title, style: textStyle),
+   title: Text(title, style: textStyle),
   );
 }
