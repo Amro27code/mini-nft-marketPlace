@@ -54,7 +54,7 @@ class TextStyleManager {
   );
   static const TextStyle appTitleStatsNonActive = TextStyle(
     fontWeight: FontWeight.bold,
-    color: Colors.grey,
+    color: ColorManager.greyColor,
     fontFamily: FontFamilyManager.sfProDisplay,
   );
 }

@@ -29,34 +29,56 @@ class StatesPage extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            padding: const EdgeInsets.all(16),
+            // padding: const EdgeInsets.only(16),
             decoration: BoxDecoration(
-              border: Border(bottom: BorderSide(color: Colors.grey)),
+              border: Border(bottom: BorderSide(color: ColorManager.greyColor)),
             ),
             child: Row(
               mainAxisAlignment: .spaceEvenly,
               children: [
-                Row(
-                  mainAxisSize: .min,
-                  spacing: 5,
+                Column(
                   children: [
-                    Icon(IconsManager.probabilityBnb, color: Colors.grey),
-                    Text(
-                      "Ranking",
-                      style: TextStyleManager.appTitleStatsActive,
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 10.0),
+                      child: Row(
+                        mainAxisSize: .min,
+                        spacing: 5,
+                        children: [
+                          Icon(
+                            IconsManager.probabilityBnb,
+                            color: ColorManager.greyColor,
+                          ),
+                          Text(
+                            "Ranking",
+                            style: TextStyleManager.appTitleStatsActive,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 106,
+                      height: 3.6,
+                      decoration: BoxDecoration(
+                        // boxShadow: [],
+                        color: ColorManager.lightBlueStats,
+                        borderRadius: BorderRadius.circular(27),
+                      ),
                     ),
                   ],
                 ),
-                Row(
-                  mainAxisSize: .min,
-                  spacing: 5,
-                  children: [
-                    Icon(Icons.stacked_line_chart_sharp, color: Colors.grey),
-                    Text(
-                      "Activity",
-                      style: TextStyleManager.appTitleStatsNonActive,
-                    ),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 10.0),
+                  child: Row(
+                    mainAxisSize: .min,
+                    spacing: 5,
+                    children: [
+                      Icon(Icons.stacked_line_chart_sharp, color: Colors.grey),
+                      Text(
+                        "Activity",
+                        style: TextStyleManager.appTitleStatsNonActive,
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),

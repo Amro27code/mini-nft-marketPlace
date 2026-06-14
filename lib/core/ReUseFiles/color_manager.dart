@@ -4,9 +4,12 @@ class ColorManager {
   static const Color whiteColor = Colors.white;
   static const Color blueColor = Colors.blue;
   static const Color pinkColor = Colors.pink;
+  static const Color greyColor = Colors.grey;
   static  Color whiteColor50Opacity = Colors.white.withOpacity(0.5);
   static  Color whiteColor30Alpha = ColorManager.whiteColor.withAlpha(30);
   static const Color backgroundOnB1 = Color(0xff5C6098);
+  static const Color lightBlue = Color(0xff97A9F6);
+  static const Color lightBlueStats = Color(0xff976dff);
   static const Color backgroundOnB2 = Color(0xff767CB2);
   static const Color transparentColor = Colors.transparent;
   static const Color subtitleCardOnB = Color.fromRGBO(245, 245, 245, 0.7);
