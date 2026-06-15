@@ -26,5 +26,8 @@ class TextManager {
   static const String subtitleHotSeller1="mali #7890";
   static const String subtitleHotSeller2="baalli #4890";
   static const String subtitleHotSeller3="Ring #7288";
+  static const String stats="stats";
+  static const String ranking="Ranking";
+  static const String activity="Activity";
 
 }

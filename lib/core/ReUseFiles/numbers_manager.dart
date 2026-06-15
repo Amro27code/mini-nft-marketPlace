@@ -11,6 +11,7 @@ class WidthManager {
   static const double w167 = 167.66;
   static const double wBetweenTwoBBnb = 39;
   static const double wPolygon = 70;
+  static const double activeTopTitleStats = 106;
 }
 
 class HeightManager {
@@ -29,7 +30,8 @@ class HeightManager {
   static const double hPolygon = 70;
   static const double bnbWithoutPolygon = 90;
   static const double bnbWithPolygon = 122;
-
+  static const double toolBarStatsPage = 66;
+  static const double activeTopTitleStats = 3.6;
 }
 
 class PaddingManager {
@@ -40,6 +42,7 @@ class PaddingManager {
   static const double p_9 = 9;
   static const double p_18 = 18;
   static const double p_16 = 16;
+  static const double statsPage = 22.52;
 }
 
 class MarginManager {}
@@ -54,6 +57,7 @@ class CirRadius {
   static double imagesHome = 27.3;
   static double imagesCollectionHome = 19.82;
   static double bnbRadius = 60;
+  static double activeTopTitleStats = 27;
 }
 
 class SigmaImageFilter {
@@ -68,19 +72,19 @@ class SigmaImageFilter {
 class PositionManager {
   static const double textAboveImageAtHome = 0;
   static const double topInPolygon = 0;
-
-
 }
 
 class Numbers {
   static const int n194 = 194;
   static const int n200 = 200;
   static const int n978 = 978;
-  static const int n5160 =  5160;
-  static const int n132 =  132;
-  static const int n3222 =  3222;
-  static const int n27 =  27;
+  static const int n5160 = 5160;
+  static const int n132 = 132;
+  static const int n3222 = 3222;
+  static const int n27 = 27;
   static const int n20 = 20;
+  static const double n5 = 5;
+  static const double n10 = 10;
   static const double sidesPolygon = 6;
   static const double roundPointsPolygon = 0.5;
   static const double sizeIconsBnb = 39;
@@ -90,6 +94,8 @@ class Numbers {
   static const double hotNew1seller = 0.46;
   static const double hotNew2seller = 0.03;
   static const double hotNew3seller = 0.106;
-
-
+  static const double topTitleShadowBlurR = 20;
+  static const double topTitleShadowOffsetX = 0;
+  static const double topTitleShadowOffsetY = -12;
+  static const double topTitleShadowSpread = 0.5;
 }

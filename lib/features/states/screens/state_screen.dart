@@ -2,9 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mini_nft_marketplace/core/ReUseFiles/color_manager.dart';
 import 'package:mini_nft_marketplace/core/ReUseFiles/icons.dart';
-import 'package:mini_nft_marketplace/core/ReUseFiles/text_style_manager.dart';
+import 'package:mini_nft_marketplace/core/ReUseFiles/numbers_manager.dart';
+import 'package:mini_nft_marketplace/core/ReUseFiles/text_manager.dart';
 import 'package:mini_nft_marketplace/core/widgets/app_bar_wdg.dart';
-import 'package:mini_nft_marketplace/core/widgets/bnb.dart';
+import 'package:mini_nft_marketplace/features/states/widgets/subtitle_widget.dart';
+import 'package:mini_nft_marketplace/features/states/widgets/top_title_widget.dart';
 
 class StatesPage extends StatelessWidget {
   const StatesPage({super.key});
@@ -14,14 +16,16 @@ class StatesPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorManager.backgroundHomePage,
       appBar: appBar(
-        title: "Stats",
-        toolBarHeight: 66.67,
+        title: TextManager.stats,
+        toolBarHeight: HeightManager.toolBarStatsPage,
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 22.52),
+            padding: const EdgeInsets.symmetric(
+              horizontal: PaddingManager.statsPage,
+            ),
             child: IconButton(
               onPressed: () {},
-              icon: Icon(CupertinoIcons.ellipsis_circle),
+              icon: Icon(IconsManager.drawerMore),
             ),
           ),
         ],
@@ -29,67 +33,44 @@ class StatesPage extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            // padding: const EdgeInsets.only(16),
             decoration: BoxDecoration(
               border: Border(bottom: BorderSide(color: ColorManager.greyColor)),
             ),
             child: Row(
               mainAxisAlignment: .spaceEvenly,
               children: [
-                Column(
-                  children: [
-                    Row(
-                      mainAxisSize: .min,
-                      spacing: 5,
-                      children: [
-                        Icon(
-                          IconsManager.probabilityBnb,
-                          color: ColorManager.greyColor,
-                        ),
-                        Text(
-                          "Ranking",
-                          style: TextStyleManager.appTitleStatsActive,
-                        ),
-                      ],
-                    ),
-                    Container(
-                      width: 106,
-                      height: 3.6,
-                      margin: const EdgeInsets.only(top: 10.0),
-                      decoration: BoxDecoration(
-                        boxShadow: [
-                          BoxShadow(
-                            blurRadius: 20,
-                            offset: Offset(0, -12),
-                            spreadRadius: 0.5,
-                            color: ColorManager.lightBlueStats,
-                          ),
-                        ],
-                        color: ColorManager.lightBlueStats,
-                        borderRadius: BorderRadius.circular(27),
-                      ),
-                    ),
-                  ],
+                topTitleWidget(
+                  text: TextManager.ranking,
+                  icon: IconsManager.probabilityBnb,
+                  isActive: false,
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 10.0),
-                  child: Row(
-                    mainAxisSize: .min,
-                    spacing: 5,
-                    children: [
-                      Icon(Icons.stacked_line_chart_sharp, color: Colors.grey),
-                      Text(
-                        "Activity",
-                        style: TextStyleManager.appTitleStatsNonActive,
-                      ),
-                    ],
-                  ),
+                topTitleWidget(
+                  text: TextManager.activity,
+                  icon: IconsManager.activity,
+                  isActive: true,
                 ),
               ],
             ),
           ),
-          // const SizedBox(height:17 ,),
-          // Divider(color: Colors.grey,height: 1,thickness: 0.2,)
+          const SizedBox(height: 27),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24.0),
+            child: Row(
+              mainAxisAlignment: .spaceBetween,
+              children: [
+                subTitleWidget(
+                  icon1: Icons.window_outlined,
+                  text: "All categories",
+                  icon2: Icons.keyboard_arrow_down,
+                ),
+                subTitleWidget(
+                  icon1: CupertinoIcons.link,
+                  text: "All Chains",
+                  icon2: Icons.keyboard_arrow_down,
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

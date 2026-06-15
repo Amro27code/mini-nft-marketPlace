@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class IconsManager {
@@ -8,4 +9,6 @@ class IconsManager {
   static const IconData probabilityBnb = Icons.signal_cellular_alt;
   static const IconData searchBnb = Icons.search_rounded;
   static const IconData personBnb = Icons.person_outline_sharp;
+  static const IconData activity = Icons.stacked_line_chart;
+  static const IconData drawerMore = CupertinoIcons.ellipsis_circle;
 }

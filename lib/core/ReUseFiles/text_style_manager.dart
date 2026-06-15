@@ -57,4 +57,9 @@ class TextStyleManager {
     color: ColorManager.greyColor,
     fontFamily: FontFamilyManager.sfProDisplay,
   );
+  static const TextStyle subTitleStats = TextStyle(
+    fontWeight: FontWeight.w400,
+    fontSize:14 ,
+    fontFamily: FontFamilyManager.sfProDisplay,
+  );
 }
