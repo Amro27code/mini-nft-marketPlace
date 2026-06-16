@@ -3,6 +3,7 @@ import 'package:mini_nft_marketplace/core/ReUseFiles/text_manager.dart';
 import 'package:mini_nft_marketplace/models/top_seller_and_hot_new.dart';
 import '../../features/home/widgets/image_home.dart';
 import '../../models/images_home.dart';
+import '../../models/table_row_model.dart';
 import '../../models/trending.dart';
 import 'image_path_manager.dart';
 import 'numbers_manager.dart';
@@ -117,6 +118,89 @@ class Constants {
       isActive: false,
       countLike: Numbers.n27,
       seller: Numbers.hotNew3seller,
+    ),
+  ];
+  static final List<TableRowModel> tableRowStatsPage = [
+    TableRowModel(
+      id: 1,
+      leading: ImagePathManager.tableRow1,
+      title: "Azumi",
+      subtitle: "view info",
+      seller: 200055.02,
+      rankAverage: "3,99%",
+    ),
+    TableRowModel(
+      id: 2,
+      leading: ImagePathManager.tableRow2,
+      title: "Hape prime",
+      subtitle: "view info",
+      seller: 180055.45,
+      rankAverage: "33,79%",
+    ),
+    TableRowModel(
+      id: 3,
+      leading: ImagePathManager.tableRow3,
+      title: "Cryoto",
+      subtitle: "view info",
+      seller: 90055.62,
+      rankAverage: "-6,56%",
+      isRed: true,
+    ),
+    TableRowModel(
+      id: 4,
+      leading: ImagePathManager.tableRow4,
+      title: "Ape Club",
+      subtitle: "view info",
+      seller: 10055.02,
+      rankAverage: "3,99%",
+    ),
+    TableRowModel(
+      id: 5,
+      leading: ImagePathManager.tableRow5,
+      title: "Bat",
+      subtitle: "view info",
+      seller: 200055.02,
+      rankAverage: "3,99%",
+    ),
+    TableRowModel(
+      id: 6,
+      leading: ImagePathManager.tableRow6,
+      title: "Mutant",
+      subtitle: "view info",
+      seller: 9095.27,
+      rankAverage: "3,99%",
+    ),
+    TableRowModel(
+      id: 7,
+      leading: ImagePathManager.tableRow7,
+      title: "Metaverse",
+      subtitle: "view info",
+      seller: 10055.02,
+      rankAverage: "3,99%",
+    ),
+    TableRowModel(
+      id: 8,
+      leading: ImagePathManager.tableRow8,
+      title: "Mountain",
+      subtitle: "view info",
+      seller: 10055.2,
+      rankAverage: "3,99%",
+    ),
+    TableRowModel(
+      id: 9,
+      leading: ImagePathManager.tableRow9,
+      title: "Mutant",
+      subtitle: "view info",
+      seller: 5055.73,
+      rankAverage: "3,99%",
+    ),
+    TableRowModel(
+      id: 10,
+      leading: ImagePathManager.tableRow10,
+      title: "The Sandbox",
+      subtitle: "view info",
+      seller: 1055.02,
+      rankAverage: "-1,99%",
     ),
   ];
 }

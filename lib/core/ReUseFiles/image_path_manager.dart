@@ -13,4 +13,14 @@ class ImagePathManager {
   static const String hotNew1 = "assets/images/hN1.png";
   static const String hotNew2 = "assets/images/hN2.png";
   static const String hotNew3 = "assets/images/hN3.png";
+  static const String tableRow1 = "assets/images/statsPages/Shape1.png";
+  static const String tableRow2 = "assets/images/statsPages/Shape.png";
+  static const String tableRow3 = "assets/images/statsPages/Shape2.png";
+  static const String tableRow4 = "assets/images/statsPages/Shape3.png";
+  static const String tableRow5 = "assets/images/statsPages/Shape4.png";
+  static const String tableRow6 = "assets/images/statsPages/Shape5.png";
+  static const String tableRow7 = "assets/images/statsPages/Shape6.png";
+  static const String tableRow8 = "assets/images/statsPages/Shape7.png";
+  static const String tableRow9 = "assets/images/statsPages/Shape8.png";
+  static const String tableRow10 = "assets/images/statsPages/Shape9.png";
 }

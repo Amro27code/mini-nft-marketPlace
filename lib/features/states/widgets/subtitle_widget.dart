@@ -20,7 +20,7 @@ Container subTitleWidget({
       spacing: 3,
       mainAxisAlignment: .center,
       children: [
-       const  Icon(icon1, color: ColorManager.greyColor, size: 15),
+        Icon(icon1, color: ColorManager.greyColor, size: 15),
         Text(text, style: TextStyleManager.subTitleStats),
         Icon(icon2, color: ColorManager.greyColor, size: 15),
       ],
